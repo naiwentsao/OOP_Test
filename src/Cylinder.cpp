@@ -7,22 +7,20 @@
 using namespace std;
 
 double Cylinder :: SurfaceArea(){
-    
     double pi = M_PI;
-    
-    return 2.0*(double)this->radius*(double)this->radius*pi + 2.0*pi*(double)this->radius*(double)this->height;
+    return pi*(double)2*(double)this->radius*(double)this->radius + pi*(double)2*(double)this->radius*(double)this->height;
 }
 
 double Cylinder :: Volume(){
     double pi = M_PI;
     
-    return (double)this->radius*(double)this->radius*pi*(double)this->height;
+    return pi*(double)this->radius*(double)this->radius*(double)this->height;
 }
 
 double Cylinder :: Circumference(){
     double pi = M_PI;
     
-    return (double)this->radius*pi*2.0;
+    return pi*(double)this->radius*(double)2;
 }
 
 istream & operator>>(istream & in, Cylinder & cldr)
